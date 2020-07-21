@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MyLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/background"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        >
+        <com.example.myapplication.CustomButton
+            android:id="@+id/btnChamCong"
+            android:text="Chấm công"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img"
+            android:layout_marginBottom="-50dp"
+            />
+        <com.example.myapplication.CustomButton
+            android:id="@+id/btnThemNV"
+            android:text="DS nhân viên"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img"
+            android:layout_marginBottom="-50dp"
+            />
+        <com.example.myapplication.CustomButton
+            android:id="@+id/btnDSCC"
+            android:text="DS chấm công"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img"
+            android:layout_marginBottom="-50dp"
+            />
+    </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/Mouse"
+            android:scaleType="fitXY"
+            android:background="@drawable/pen"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        android:textSize="20dp"
+        android:id="@+id/txtTest"
+        android:textColor="#FF0000"/>
+
+
+</LinearLayout>
